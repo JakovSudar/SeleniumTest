@@ -1,0 +1,30 @@
+package Pages;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class HomePage {
+    WebDriver driver = null;
+
+    //constructor driver injection
+    public HomePage(WebDriver driver){
+        this.driver = driver;
+    }
+
+    //Declaring elements
+    By textBox_search = By.name("q");
+    By btn_submit_search = By.className("submit");
+    By btn_chart = By.id("desktop-cart-button");
+
+    //methods
+    public void SetSearchingProduct(String product){
+        driver.findElement(textBox_search).sendKeys(product);
+    }
+    public void SubmitSearch(){
+        driver.findElement(btn_submit_search).click();
+    }
+    public void ClickChart(){
+        driver.findElement(btn_chart).click();
+    }
+
+
+}
