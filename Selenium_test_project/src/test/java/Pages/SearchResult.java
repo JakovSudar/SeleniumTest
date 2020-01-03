@@ -17,10 +17,13 @@ public class SearchResult {
     By end_shopping = By.className("blagajna");
 
     //productOrder is ordinal number of product in search result
-    public void BuyProduct(int productOrder){
-        driver.findElement(By.xpath("/html/body/div[6]/div/section/div[3]/section["+productOrder+"]/div[3]/div[2]"));
+    public void BuyProduct(String productOrder){
+        driver.findElement(By.xpath("/html/body/div[6]/div/section/div[3]/section["+productOrder+"]/div[3]/div[2]")).click();
     }
     public void SetAmount(String amount){
+        //clear amount
+        driver.findElement(basket_amount).clear();
+        //set new amount
         driver.findElement(basket_amount).sendKeys(amount);
     }
 
