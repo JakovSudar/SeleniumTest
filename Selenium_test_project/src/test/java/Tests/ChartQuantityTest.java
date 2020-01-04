@@ -1,7 +1,9 @@
+package Tests;
 
 import Pages.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -16,6 +18,7 @@ public class ChartQuantityTest {
     LoginPage loginPage;
     SearchResult searchResult;
     ChartPage chartPage;
+
     //-----------------------------------Test Setup-----------------------------------
     @BeforeMethod
     public void setupTest() {
@@ -26,6 +29,8 @@ public class ChartQuantityTest {
         homePage = new HomePage(driver);
         searchResult = new SearchResult(driver);
         chartPage = new ChartPage(driver);
+        loginPage = new LoginPage(driver);
+
        //navigate to web page
         driver.navigate().to(testURL);
         driver.manage().window().maximize();
@@ -121,6 +126,33 @@ public class ChartQuantityTest {
         Thread.sleep(200);
         Assert.assertEquals(chartPage.GetProductQuantity(),"10");
         Thread.sleep(200);
+    }
+    @Test
+    public void Add500ProductQuantity()throws InterruptedException{
+        homePage.CloseNewsletterPopup();
+        homePage.CloseCookiePopup();
+        homePage.SetSearchingProduct("Playstation");
+        homePage.SubmitSearch();
+        Thread.sleep(900);
+        searchResult.BuyProduct(1);
+        //Add 500 "Playstation" to chart
+        searchResult.SetAmount("50000");
+        searchResult.IncreaseAmountBy1();
+        searchResult.EndShopping();
+        chartPage.NextStep();
+        Thread.sleep(200);
+        loginPage.SetUsername("jakovusdar@gmail.com");
+        loginPage.SetPassword("testiranje123");
+        loginPage.SubmitLogin();
+        Thread.sleep(100);
+        chartPage.NextStep();
+        Thread.sleep(100);
+        chartPage.SetPickupInStore();
+        chartPage.ChoosePaymentOption_Cards();
+        Thread.sleep(100);
+        chartPage.NextStep();
+        Thread.sleep(100);
+        Assert.assertEquals(true,chartPage.IsOrderReady());
     }
     //-----------------------------------Test TearDown-----------------------------------
     @AfterMethod
