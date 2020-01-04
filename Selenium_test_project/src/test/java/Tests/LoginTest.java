@@ -51,7 +51,6 @@ public class LoginTest {
         Thread.sleep(300);
         Assert.assertEquals("Korisničko ime i lozinka ne odgovaraju.",loginPage.GetErrorMessage());
     }
-
    @Test
    public void SqlInjectionTest()throws InterruptedException{
        loginPage.SetUsername("'or'1=1'or'1=j@gmail.com");
@@ -61,7 +60,6 @@ public class LoginTest {
        Thread.sleep(300);
        Assert.assertEquals("Korisničko ime i lozinka ne odgovaraju.",loginPage.GetErrorMessage());
    }
-
     @AfterMethod
     public void teardownTest() {
         //Close browser and end the session
