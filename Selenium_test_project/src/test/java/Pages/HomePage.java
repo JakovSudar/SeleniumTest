@@ -13,7 +13,7 @@ public class HomePage {
     //Declaring elements
     By textBox_search = By.name("q");
     By btn_submit_search = By.className("submit");
-    By btn_chart = By.id("desktop-cart-button");
+
 
     //methods
     public void SetSearchingProduct(String product){
@@ -22,9 +22,7 @@ public class HomePage {
     public void SubmitSearch(){
         driver.findElement(btn_submit_search).click();
     }
-    public void ClickChart(){
-        driver.findElement(btn_chart).click();
-    }
+
 
 
 }

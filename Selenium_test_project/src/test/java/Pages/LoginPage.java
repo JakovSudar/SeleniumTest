@@ -15,6 +15,8 @@ public class LoginPage {
     By textBox_username = By.id("username");
     By textBox_password = By.name("password");
     By btn_login = By.name("submit");
+    By btn_logoff = By.xpath("/html/body/div[2]/div/nav[2]/a[6]/span");
+    By message = By.id("server_message");
 
     //methods
     public void SetUsername(String username){
@@ -25,6 +27,12 @@ public class LoginPage {
     }
     public void SubmitLogin(){
         driver.findElement(btn_login).click();
+    }
+    public void LogOff(){
+        driver.findElement(btn_logoff).click();
+    }
+    public String GetErrorMessage(){
+        return driver.findElement(message).getText();
     }
 
 }

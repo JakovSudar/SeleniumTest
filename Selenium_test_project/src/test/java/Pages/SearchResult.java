@@ -15,9 +15,11 @@ public class SearchResult {
     By basket_amount = By.id("basket-amount");
     By continue_shopping = By.className("kupovina");
     By end_shopping = By.className("blagajna");
+    By increase_amount = By.id("basket-increase");
+    By decrease_amount = By.id("basket-decrease");
 
     //productOrder is ordinal number of product in search result
-    public void BuyProduct(String productOrder){
+    public void BuyProduct(int productOrder){
         driver.findElement(By.xpath("/html/body/div[6]/div/section/div[3]/section["+productOrder+"]/div[3]/div[2]")).click();
     }
     public void SetAmount(String amount){
@@ -26,7 +28,12 @@ public class SearchResult {
         //set new amount
         driver.findElement(basket_amount).sendKeys(amount);
     }
-
+    public void IncreaseAmountBy1(){
+        driver.findElement(increase_amount).click();
+    }
+    public void DecreaseAmountBy1(){
+        driver.findElement(decrease_amount).click();
+    }
     //next 2 methods needs to be called right after method BuyProduct
     public void ContinueShopping(){
         driver.findElement(continue_shopping).click();
