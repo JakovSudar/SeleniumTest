@@ -95,7 +95,7 @@ public class ChartQuantityTest {
         Assert.assertEquals(chartPage.GetProductQuantity(),"2");
         Thread.sleep(200);
     }
-    //This test checks if chart is showing correct quantity number of products when user instead of clicking + to increase
+    //This two tests checks if chart is showing correct quantity number of products when user instead of clicking + to increase
     //number of products, write correct value with keyboard.
     @Test
     public void ChartQuantityTest_EndShopping_InsertedNumberOfProducts() throws InterruptedException {
@@ -127,15 +127,17 @@ public class ChartQuantityTest {
         Assert.assertEquals(chartPage.GetProductQuantity(),"10");
         Thread.sleep(200);
     }
+
+    //We shouldn't be able to order 50001 Playstations
     @Test
-    public void Add500ProductQuantity()throws InterruptedException{
+    public void Add500001ProductQuantity()throws InterruptedException{
         homePage.CloseNewsletterPopup();
         homePage.CloseCookiePopup();
         homePage.SetSearchingProduct("Playstation");
         homePage.SubmitSearch();
         Thread.sleep(900);
         searchResult.BuyProduct(1);
-        //Add 500 "Playstation" to chart
+        //Add 50001 "Playstation" to chart
         searchResult.SetAmount("50000");
         searchResult.IncreaseAmountBy1();
         searchResult.EndShopping();
@@ -153,6 +155,26 @@ public class ChartQuantityTest {
         chartPage.NextStep();
         Thread.sleep(100);
         Assert.assertEquals(true,chartPage.IsOrderReady());
+    }
+    //If add product to chart after that same product was already added, quantity in chart should increase
+    @Test
+    public void AddSameProductTwoTimes()throws InterruptedException{
+        homePage.SetSearchingProduct("Playstation");
+        homePage.SubmitSearch();
+        Thread.sleep(300);
+        searchResult.BuyProduct(1);
+        searchResult.ContinueShopping();
+        //Repeat process
+        homePage.SetSearchingProduct("Playstation");
+        homePage.SubmitSearch();
+        Thread.sleep(300);
+        searchResult.BuyProduct(1);
+        searchResult.ContinueShopping();
+        chartPage.EnterChart();
+        Thread.sleep(100);
+        //Quantity should be 2
+        Assert.assertEquals(chartPage.GetQuantityOfFirstProductInChart(),"2");
+
     }
     //-----------------------------------Test TearDown-----------------------------------
     @AfterMethod
