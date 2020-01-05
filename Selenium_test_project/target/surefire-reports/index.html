@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-AllTestsSuite" class="navigator-link">
+              <span class="suite-name border-failed">AllTestsSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-AllTestsSuite" class="navigator-link ">
+                    <span>C:\Users\Jakov\Desktop\SeleniumTest\Selenium_test_project\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-AllTestsSuite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-AllTestsSuite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-AllTestsSuite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-AllTestsSuite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-AllTestsSuite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-AllTestsSuite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">12 methods, 5 failed,   7 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-AllTestsSuite" class="hide-methods failed suite-AllTestsSuite"> (hide)</a> <!-- hide-methods failed suite-AllTestsSuite -->
+                      <a href="#" panel-name="suite-AllTestsSuite" class="show-methods failed suite-AllTestsSuite"> (show)</a> <!-- show-methods failed suite-AllTestsSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-AllTestsSuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AllTestsSuite" title="Tests.ChartQuantityTest" class="method navigator-link" hash-for-method="Add500001ProductQuantity">Add500001ProductQuantity</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AllTestsSuite" title="Tests.ChartQuantityTest" class="method navigator-link" hash-for-method="AddSameProductTwoTimes">AddSameProductTwoTimes</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AllTestsSuite" title="Tests.ChartQuantityTest" class="method navigator-link" hash-for-method="ChartQuantityTest_ContinueShopping2">ChartQuantityTest_ContinueShopping2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AllTestsSuite" title="Tests.ChartQuantityTest" class="method navigator-link" hash-for-method="ChartQuantityTest_ContinueShopping_InsertedNumberOfProducts">ChartQuantityTest_ContinueShopping_InsertedNumberOfProducts</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AllTestsSuite" title="Tests.ChartQuantityTest" class="method navigator-link" hash-for-method="ChartQuantityTest_EndShopping_InsertedNumberOfProducts">ChartQuantityTest_EndShopping_InsertedNumberOfProducts</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-AllTestsSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-AllTestsSuite" class="hide-methods passed suite-AllTestsSuite"> (hide)</a> <!-- hide-methods passed suite-AllTestsSuite -->
+                      <a href="#" panel-name="suite-AllTestsSuite" class="show-methods passed suite-AllTestsSuite"> (show)</a> <!-- show-methods passed suite-AllTestsSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-AllTestsSuite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AllTestsSuite" title="Tests.ChartQuantityTest" class="method navigator-link" hash-for-method="ChartQuantityTest_ContinueShopping">ChartQuantityTest_ContinueShopping</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AllTestsSuite" title="Tests.ChartQuantityTest" class="method navigator-link" hash-for-method="ChartQuantityTest_EndShopping">ChartQuantityTest_EndShopping</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AllTestsSuite" title="Tests.ChartQuantityTest" class="method navigator-link" hash-for-method="ChartQuantityTest_EndShopping2">ChartQuantityTest_EndShopping2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AllTestsSuite" title="Tests.LoginTest" class="method navigator-link" hash-for-method="LoginWithFalseUsername">LoginWithFalseUsername</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AllTestsSuite" title="Tests.LoginTest" class="method navigator-link" hash-for-method="LoginWithRegisteredUsername">LoginWithRegisteredUsername</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AllTestsSuite" title="Tests.LoginTest" class="method navigator-link" hash-for-method="LoginWithRegisteredUsername_FalsePassword">LoginWithRegisteredUsername_FalsePassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AllTestsSuite" title="Tests.LoginTest" class="method navigator-link" hash-for-method="SqlInjectionTest">SqlInjectionTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-AllTestsSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-AllTestsSuite" class="panel AllTestsSuite">
+          <div class="suite-AllTestsSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Tests.ChartQuantityTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Add500001ProductQuantity">
+                  </a> <!-- Add500001ProductQuantity -->
+                  <span class="method-name">Add500001ProductQuantity</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [false] but found [true]
+	at Tests.ChartQuantityTest.Add500001ProductQuantity(ChartQuantityTest.java:156)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddSameProductTwoTimes">
+                  </a> <!-- AddSameProductTwoTimes -->
+                  <span class="method-name">AddSameProductTwoTimes</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [2] but found [1]
+	at Tests.ChartQuantityTest.AddSameProductTwoTimes(ChartQuantityTest.java:175)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ChartQuantityTest_ContinueShopping2">
+                  </a> <!-- ChartQuantityTest_ContinueShopping2 -->
+                  <span class="method-name">ChartQuantityTest_ContinueShopping2</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [2] but found [3]
+	at Tests.ChartQuantityTest.ChartQuantityTest_ContinueShopping2(ChartQuantityTest.java:65)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ChartQuantityTest_ContinueShopping_InsertedNumberOfProducts">
+                  </a> <!-- ChartQuantityTest_ContinueShopping_InsertedNumberOfProducts -->
+                  <span class="method-name">ChartQuantityTest_ContinueShopping_InsertedNumberOfProducts</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [10] but found [1]
+	at Tests.ChartQuantityTest.ChartQuantityTest_ContinueShopping_InsertedNumberOfProducts(ChartQuantityTest.java:126)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ChartQuantityTest_EndShopping_InsertedNumberOfProducts">
+                  </a> <!-- ChartQuantityTest_EndShopping_InsertedNumberOfProducts -->
+                  <span class="method-name">ChartQuantityTest_EndShopping_InsertedNumberOfProducts</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [10] but found [1]
+	at Tests.ChartQuantityTest.ChartQuantityTest_EndShopping_InsertedNumberOfProducts(ChartQuantityTest.java:111)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AllTestsSuite-class-failed -->
+          <div class="suite-AllTestsSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Tests.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginWithFalseUsername">
+                  </a> <!-- LoginWithFalseUsername -->
+                  <span class="method-name">LoginWithFalseUsername</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginWithRegisteredUsername">
+                  </a> <!-- LoginWithRegisteredUsername -->
+                  <span class="method-name">LoginWithRegisteredUsername</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginWithRegisteredUsername_FalsePassword">
+                  </a> <!-- LoginWithRegisteredUsername_FalsePassword -->
+                  <span class="method-name">LoginWithRegisteredUsername_FalsePassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SqlInjectionTest">
+                  </a> <!-- SqlInjectionTest -->
+                  <span class="method-name">SqlInjectionTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AllTestsSuite-class-passed -->
+          <div class="suite-AllTestsSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Tests.ChartQuantityTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ChartQuantityTest_ContinueShopping">
+                  </a> <!-- ChartQuantityTest_ContinueShopping -->
+                  <span class="method-name">ChartQuantityTest_ContinueShopping</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ChartQuantityTest_EndShopping">
+                  </a> <!-- ChartQuantityTest_EndShopping -->
+                  <span class="method-name">ChartQuantityTest_EndShopping</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ChartQuantityTest_EndShopping2">
+                  </a> <!-- ChartQuantityTest_EndShopping2 -->
+                  <span class="method-name">ChartQuantityTest_EndShopping2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AllTestsSuite-class-passed -->
+        </div> <!-- panel AllTestsSuite -->
+        <div panel-name="test-xml-AllTestsSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Jakov\Desktop\SeleniumTest\Selenium_test_project\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;AllTestsSuite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;HGSHOP Test&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Tests.ChartQuantityTest&quot;/&gt;
+      &lt;class name=&quot;Tests.LoginTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- HGSHOP Test --&gt;
+&lt;/suite&gt; &lt;!-- AllTestsSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-AllTestsSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for AllTestsSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">HGSHOP Test (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-AllTestsSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for AllTestsSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-AllTestsSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for AllTestsSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_AllTestsSuite');
+function tableData_AllTestsSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(12);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'Add500001ProductQuantity')
+data.setCell(0, 2, 'Tests.ChartQuantityTest')
+data.setCell(0, 3, 10766);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'AddSameProductTwoTimes')
+data.setCell(1, 2, 'Tests.ChartQuantityTest')
+data.setCell(1, 3, 7781);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'ChartQuantityTest_ContinueShopping2')
+data.setCell(2, 2, 'Tests.ChartQuantityTest')
+data.setCell(2, 3, 6014);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'ChartQuantityTest_EndShopping')
+data.setCell(3, 2, 'Tests.ChartQuantityTest')
+data.setCell(3, 3, 3943);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'ChartQuantityTest_EndShopping_InsertedNumberOfProducts')
+data.setCell(4, 2, 'Tests.ChartQuantityTest')
+data.setCell(4, 3, 3403);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'ChartQuantityTest_EndShopping2')
+data.setCell(5, 2, 'Tests.ChartQuantityTest')
+data.setCell(5, 3, 3298);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'LoginWithRegisteredUsername')
+data.setCell(6, 2, 'Tests.LoginTest')
+data.setCell(6, 3, 3002);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'ChartQuantityTest_ContinueShopping_InsertedNumberOfProducts')
+data.setCell(7, 2, 'Tests.ChartQuantityTest')
+data.setCell(7, 3, 2732);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'ChartQuantityTest_ContinueShopping')
+data.setCell(8, 2, 'Tests.ChartQuantityTest')
+data.setCell(8, 3, 2658);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'LoginWithFalseUsername')
+data.setCell(9, 2, 'Tests.LoginTest')
+data.setCell(9, 3, 1321);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'LoginWithRegisteredUsername_FalsePassword')
+data.setCell(10, 2, 'Tests.LoginTest')
+data.setCell(10, 3, 1283);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'SqlInjectionTest')
+data.setCell(11, 2, 'Tests.LoginTest')
+data.setCell(11, 3, 1217);
+window.suiteTableData['AllTestsSuite']= { tableData: data, tableDiv: 'times-div-AllTestsSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 47 seconds</span>
+              <div id="times-div-AllTestsSuite">
+              </div> <!-- times-div-AllTestsSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-AllTestsSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for AllTestsSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-AllTestsSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-AllTestsSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">Tests.ChartQuantityTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setupTest</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Add500001ProductQuantity</span>
+                <span class="method-start">6697 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardownTest</span>
+                <span class="method-start">17467 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupTest</span>
+                <span class="method-start">18183 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">AddSameProductTwoTimes</span>
+                <span class="method-start">24844 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardownTest</span>
+                <span class="method-start">32626 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupTest</span>
+                <span class="method-start">33397 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ChartQuantityTest_ContinueShopping</span>
+                <span class="method-start">42672 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardownTest</span>
+                <span class="method-start">45331 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupTest</span>
+                <span class="method-start">46380 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ChartQuantityTest_ContinueShopping2</span>
+                <span class="method-start">53305 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardownTest</span>
+                <span class="method-start">59320 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupTest</span>
+                <span class="method-start">60035 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ChartQuantityTest_ContinueShopping_InsertedNumberOfProducts</span>
+                <span class="method-start">69464 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardownTest</span>
+                <span class="method-start">72197 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupTest</span>
+                <span class="method-start">72908 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ChartQuantityTest_EndShopping</span>
+                <span class="method-start">82021 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardownTest</span>
+                <span class="method-start">85965 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupTest</span>
+                <span class="method-start">86691 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ChartQuantityTest_EndShopping2</span>
+                <span class="method-start">93579 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardownTest</span>
+                <span class="method-start">96877 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupTest</span>
+                <span class="method-start">97580 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ChartQuantityTest_EndShopping_InsertedNumberOfProducts</span>
+                <span class="method-start">106193 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardownTest</span>
+                <span class="method-start">109597 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setupTest</span>
+                <span class="method-start">110313 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">LoginWithFalseUsername</span>
+                <span class="method-start">115391 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardownTest</span>
+                <span class="method-start">116712 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupTest</span>
+                <span class="method-start">117395 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">LoginWithRegisteredUsername</span>
+                <span class="method-start">122640 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardownTest</span>
+                <span class="method-start">125642 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupTest</span>
+                <span class="method-start">126369 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">LoginWithRegisteredUsername_FalsePassword</span>
+                <span class="method-start">131941 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardownTest</span>
+                <span class="method-start">133224 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupTest</span>
+                <span class="method-start">133910 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">SqlInjectionTest</span>
+                <span class="method-start">139305 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardownTest</span>
+                <span class="method-start">140522 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

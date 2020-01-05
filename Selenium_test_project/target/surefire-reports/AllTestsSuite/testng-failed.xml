@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [AllTestsSuite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="HGSHOP Test(failed)" verbose="0">
+    <classes>
+      <class name="Tests.ChartQuantityTest">
+        <methods>
+          <include name="setupTest"/>
+          <include name="AddSameProductTwoTimes"/>
+          <include name="ChartQuantityTest_EndShopping_InsertedNumberOfProducts"/>
+          <include name="Add500001ProductQuantity"/>
+          <include name="ChartQuantityTest_ContinueShopping_InsertedNumberOfProducts"/>
+          <include name="teardownTest"/>
+          <include name="ChartQuantityTest_ContinueShopping2"/>
+        </methods>
+      </class> <!-- Tests.ChartQuantityTest -->
+    </classes>
+  </test> <!-- HGSHOP Test(failed) -->
+</suite> <!-- Failed suite [AllTestsSuite] -->

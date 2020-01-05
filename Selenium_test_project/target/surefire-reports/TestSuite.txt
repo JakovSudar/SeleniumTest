@@ -1,0 +1,24 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 142.138 sec <<< FAILURE! - in TestSuite
+Add500001ProductQuantity(Tests.ChartQuantityTest)  Time elapsed: 10.77 sec  <<< FAILURE!
+java.lang.AssertionError: expected [false] but found [true]
+	at Tests.ChartQuantityTest.Add500001ProductQuantity(ChartQuantityTest.java:156)
+
+AddSameProductTwoTimes(Tests.ChartQuantityTest)  Time elapsed: 7.781 sec  <<< FAILURE!
+java.lang.AssertionError: expected [2] but found [1]
+	at Tests.ChartQuantityTest.AddSameProductTwoTimes(ChartQuantityTest.java:175)
+
+ChartQuantityTest_ContinueShopping2(Tests.ChartQuantityTest)  Time elapsed: 6.015 sec  <<< FAILURE!
+java.lang.AssertionError: expected [2] but found [3]
+	at Tests.ChartQuantityTest.ChartQuantityTest_ContinueShopping2(ChartQuantityTest.java:65)
+
+ChartQuantityTest_ContinueShopping_InsertedNumberOfProducts(Tests.ChartQuantityTest)  Time elapsed: 2.733 sec  <<< FAILURE!
+java.lang.AssertionError: expected [10] but found [1]
+	at Tests.ChartQuantityTest.ChartQuantityTest_ContinueShopping_InsertedNumberOfProducts(ChartQuantityTest.java:126)
+
+ChartQuantityTest_EndShopping_InsertedNumberOfProducts(Tests.ChartQuantityTest)  Time elapsed: 3.404 sec  <<< FAILURE!
+java.lang.AssertionError: expected [10] but found [1]
+	at Tests.ChartQuantityTest.ChartQuantityTest_EndShopping_InsertedNumberOfProducts(ChartQuantityTest.java:111)
+
