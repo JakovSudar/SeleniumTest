@@ -21,8 +21,10 @@ public class ChartPage {
     By radio_cards = By.id("kartice");
     By radio_pickupStore = By.id("preuzimanje");
     By order_rewiev = By.xpath("/html/body/div[6]/div[1]/div[2]/div/div/h2");
+    By firstProduct_quantity = By.xpath("/html/body/div[6]/div[1]/div[2]/div/div/ul/li/div[5]/input");
 
     //methods
+    //Returns number that is shown next to the "KOŠARICA" button
     public  String  GetProductQuantity (){
 
         return driver.findElement(product_quantity).getText();
@@ -42,5 +44,9 @@ public class ChartPage {
     }
     public void SetPickupInStore(){
         driver.findElement(radio_pickupStore).click();
+    }
+    //Returns quantity number of first item in chart
+    public String GetQuantityOfFirstProductInChart(){
+        return driver.findElement(firstProduct_quantity).getAttribute("value");
     }
 }
