@@ -47,7 +47,7 @@ public class ChartQuantityTest {
         //Test verify, we should have 1 product in chart.
         Thread.sleep(200);
         Assert.assertEquals(chartPage.GetProductQuantity(),"1");
-        Thread.sleep(200);
+
     }
     //This test checks if chart is showing correct quantity number of products when we continue shopping after adding two product to chart
     @Test
@@ -63,21 +63,20 @@ public class ChartQuantityTest {
         //Test verify, we should have 2 products in chart.
         Thread.sleep(200);
         Assert.assertEquals(chartPage.GetProductQuantity(),"2");
-        Thread.sleep(200);
+
     }
     //This test checks if chart is showing correct quantity number of products when we end shopping after adding one product to chart
     @Test
     public void ChartQuantityTest_EndShopping() throws InterruptedException {
         homePage.SetSearchingProduct("Playstation");
         homePage.SubmitSearch();
-        Thread.sleep(300);
+        Thread.sleep(900);
         searchResult.BuyProduct(1);
-        Thread.sleep(100);
+        Thread.sleep(300);
         searchResult.EndShopping();
         //Test verify, we should have 1 products in chart.
         Thread.sleep(200);
         Assert.assertEquals(chartPage.GetProductQuantity(),"1");
-        Thread.sleep(200);
     }
     //This test checks if chart is showing correct quantity number of products when we end shopping after adding two product to chart
     @Test
@@ -93,7 +92,7 @@ public class ChartQuantityTest {
         //Test verify, we should have 1 products in chart.
         Thread.sleep(200);
         Assert.assertEquals(chartPage.GetProductQuantity(),"2");
-        Thread.sleep(200);
+
     }
     //This two tests checks if chart is showing correct quantity number of products when user instead of clicking + to increase
     //number of products, write correct value with keyboard.
@@ -101,7 +100,7 @@ public class ChartQuantityTest {
     public void ChartQuantityTest_EndShopping_InsertedNumberOfProducts() throws InterruptedException {
         homePage.SetSearchingProduct("Playstation");
         homePage.SubmitSearch();
-        Thread.sleep(300);
+        Thread.sleep(700);
         searchResult.BuyProduct(1);
         //Add 2 "Playstation" to chart
         searchResult.SetAmount("10");
@@ -110,7 +109,7 @@ public class ChartQuantityTest {
         //Test verify, we should have 1 products in chart.
         Thread.sleep(200);
         Assert.assertEquals(chartPage.GetProductQuantity(),"10");
-        Thread.sleep(200);
+
     }
     @Test
     public void ChartQuantityTest_ContinueShopping_InsertedNumberOfProducts() throws InterruptedException {
@@ -125,7 +124,7 @@ public class ChartQuantityTest {
         //Test verify, we should have 1 products in chart.
         Thread.sleep(200);
         Assert.assertEquals(chartPage.GetProductQuantity(),"10");
-        Thread.sleep(200);
+
     }
 
     //We shouldn't be able to order 50001 Playstations
@@ -161,13 +160,13 @@ public class ChartQuantityTest {
     public void AddSameProductTwoTimes()throws InterruptedException{
         homePage.SetSearchingProduct("Playstation");
         homePage.SubmitSearch();
-        Thread.sleep(300);
+        Thread.sleep(700);
         searchResult.BuyProduct(1);
         searchResult.ContinueShopping();
         //Repeat process
         homePage.SetSearchingProduct("Playstation");
         homePage.SubmitSearch();
-        Thread.sleep(300);
+        Thread.sleep(700);
         searchResult.BuyProduct(1);
         searchResult.ContinueShopping();
         chartPage.EnterChart();
