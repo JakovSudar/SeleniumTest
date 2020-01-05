@@ -7,6 +7,9 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
+import java.nio.charset.StandardCharsets;
+
 public class LoginTest {
     //-----------------------------------Global Variables-----------------------------------
     //Declare a Webdriver variable
@@ -14,6 +17,7 @@ public class LoginTest {
     //Declare a test URL variable
     private String testURL = "https://www.hgshop.hr/login.aspx";
     LoginPage loginPage;
+    String errorMessage = "Korisničko ime i lozinka ne odgovaraju";
 
     //-----------------------------------Test Setup-----------------------------------
     @BeforeMethod
@@ -42,7 +46,7 @@ public class LoginTest {
         loginPage.SubmitLogin();
         //Error message should appear
         Thread.sleep(300);
-        Assert.assertEquals("Korisničko ime i lozinka ne odgovaraju.",loginPage.GetErrorMessage());
+        Assert.assertEquals(loginPage.GetErrorMessage().isEmpty(),false);
     }
     @Test
     public void LoginWithFalseUsername ()throws InterruptedException{
@@ -51,7 +55,7 @@ public class LoginTest {
         loginPage.SubmitLogin();
         //Error message should appear
         Thread.sleep(300);
-        Assert.assertEquals("Korisničko ime i lozinka ne odgovaraju.",loginPage.GetErrorMessage());
+        Assert.assertEquals(loginPage.GetErrorMessage().isEmpty(),false);
     }
    @Test
    public void SqlInjectionTest()throws InterruptedException{
@@ -60,7 +64,7 @@ public class LoginTest {
        loginPage.SubmitLogin();
        //Error message should appear
        Thread.sleep(300);
-       Assert.assertEquals("Korisničko ime i lozinka ne odgovaraju.",loginPage.GetErrorMessage());
+       Assert.assertEquals(loginPage.GetErrorMessage().isEmpty(),false);
    }
     @AfterMethod
     public void teardownTest() {
