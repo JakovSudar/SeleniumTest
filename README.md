@@ -5,7 +5,8 @@ Selenium TestCases for [HGShop](https://www.hgshop.hr/).
 
 ---
 
-This project covered 2 test suites, with 12 test cases altogether
+This project covered 2 test suites, with 12 test cases altogether. <br/>
+Full report is available at [Report](https://github.com/JakovSudar/SeleniumTest/blob/master/Selenium_test_project/target/surefire-reports/index.html).
 
 ---
 ### Login Test
