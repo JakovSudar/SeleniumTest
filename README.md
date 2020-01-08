@@ -9,6 +9,14 @@ This project covered 2 test suites, with 12 test cases altogether. <br/>
 Full report is available at [Report](https://github.com/JakovSudar/SeleniumTest/blob/master/Selenium_test_project/target/surefire-reports/index.html).
 
 ---
+### How to use?
+
+You must have installed maven and webdriver you want to use.
+Copy path to your webdriver and paste it in *@BeforeMethod* of test you want to run like in picture below: </br>
+![](/Selenium_test_project/Images/direkcija.png)</br>
+Run test with *"mvn test"* command from terminal.
+
+---
 ### Login Test
 
 This test suite includes 4 test cases:
