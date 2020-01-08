@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="142.138" tests="12" errors="0" skipped="0" failures="5">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="139.618" tests="12" errors="0" skipped="0" failures="6">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="13.0.1+9"/>
@@ -59,71 +59,91 @@
     <property name="sun.stdout.encoding" value="cp437"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="Add500001ProductQuantity" classname="Tests.ChartQuantityTest" time="10.77">
+  <testcase name="Add500001ProductQuantity" classname="Tests.ChartQuantityTest" time="10.366">
     <failure message="expected [false] but found [true]" type="java.lang.AssertionError">java.lang.AssertionError: expected [false] but found [true]
 	at Tests.ChartQuantityTest.Add500001ProductQuantity(ChartQuantityTest.java:156)
 </failure>
-    <system-err><![CDATA[Starting ChromeDriver 78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}) on port 9808
+    <system-err><![CDATA[Starting ChromeDriver 78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}) on port 45894
 Only local connections are allowed.
 Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-[1578222585.083][WARNING]: This version of ChromeDriver has not been tested with Chrome version 79.
-Jan 05, 2020 12:09:46 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+[1578400629.048][WARNING]: This version of ChromeDriver has not been tested with Chrome version 79.
+Jan 07, 2020 1:37:11 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="AddSameProductTwoTimes" classname="Tests.ChartQuantityTest" time="7.781">
+  <testcase name="AddSameProductTwoTimes" classname="Tests.ChartQuantityTest" time="5.577">
     <failure message="expected [2] but found [1]" type="java.lang.AssertionError">java.lang.AssertionError: expected [2] but found [1]
 	at Tests.ChartQuantityTest.AddSameProductTwoTimes(ChartQuantityTest.java:175)
 </failure>
-    <system-err><![CDATA[Starting ChromeDriver 78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}) on port 10734
+    <system-err><![CDATA[Starting ChromeDriver 78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}) on port 1222
 Only local connections are allowed.
 Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-[1578222602.694][WARNING]: This version of ChromeDriver has not been tested with Chrome version 79.
-Jan 05, 2020 12:10:03 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+[1578400653.319][WARNING]: This version of ChromeDriver has not been tested with Chrome version 79.
+Jan 07, 2020 1:37:34 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="ChartQuantityTest_ContinueShopping" classname="Tests.ChartQuantityTest" time="2.658"/>
-  <testcase name="ChartQuantityTest_ContinueShopping2" classname="Tests.ChartQuantityTest" time="6.015">
+  <testcase name="ChartQuantityTest_ContinueShopping" classname="Tests.ChartQuantityTest" time="2.642"/>
+  <testcase name="ChartQuantityTest_ContinueShopping2" classname="Tests.ChartQuantityTest" time="3.115">
     <failure message="expected [2] but found [3]" type="java.lang.AssertionError">java.lang.AssertionError: expected [2] but found [3]
 	at Tests.ChartQuantityTest.ChartQuantityTest_ContinueShopping2(ChartQuantityTest.java:65)
 </failure>
-    <system-err><![CDATA[Starting ChromeDriver 78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}) on port 24421
+    <system-err><![CDATA[Starting ChromeDriver 78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}) on port 27609
 Only local connections are allowed.
 Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-[1578222630.911][WARNING]: This version of ChromeDriver has not been tested with Chrome version 79.
-Jan 05, 2020 12:10:31 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+[1578400676.649][WARNING]: This version of ChromeDriver has not been tested with Chrome version 79.
+Jan 07, 2020 1:37:57 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="ChartQuantityTest_ContinueShopping_InsertedNumberOfProducts" classname="Tests.ChartQuantityTest" time="2.733">
+  <testcase name="ChartQuantityTest_ContinueShopping_InsertedNumberOfProducts" classname="Tests.ChartQuantityTest" time="2.185">
     <failure message="expected [10] but found [1]" type="java.lang.AssertionError">java.lang.AssertionError: expected [10] but found [1]
 	at Tests.ChartQuantityTest.ChartQuantityTest_ContinueShopping_InsertedNumberOfProducts(ChartQuantityTest.java:126)
 </failure>
-    <system-err><![CDATA[Starting ChromeDriver 78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}) on port 11135
+    <system-err><![CDATA[Starting ChromeDriver 78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}) on port 24189
 Only local connections are allowed.
 Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-[1578222644.480][WARNING]: This version of ChromeDriver has not been tested with Chrome version 79.
-Jan 05, 2020 12:10:45 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+[1578400689.441][WARNING]: This version of ChromeDriver has not been tested with Chrome version 79.
+Jan 07, 2020 1:38:10 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="ChartQuantityTest_EndShopping" classname="Tests.ChartQuantityTest" time="3.944"/>
-  <testcase name="ChartQuantityTest_EndShopping2" classname="Tests.ChartQuantityTest" time="3.298"/>
-  <testcase name="ChartQuantityTest_EndShopping_InsertedNumberOfProducts" classname="Tests.ChartQuantityTest" time="3.404">
+  <testcase name="ChartQuantityTest_EndShopping" classname="Tests.ChartQuantityTest" time="3.263"/>
+  <testcase name="ChartQuantityTest_EndShopping2" classname="Tests.ChartQuantityTest" time="1.222">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div[6]/div/section/div[3]/section[1]/div[3]/div[2]&quot;}&#10;  (Session info: chrome=79.0.3945.88)&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;&#10;System info: host: &apos;DESKTOP-3EMGBI5&apos;, ip: &apos;10.28.20.123&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;13.0.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 78.0.3904.105 (60e2d8774a81..., userDataDir: C:\Users\Jakov\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61685}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 2f3e0a902ae872782d30d417286e891b&#10;*** Element info: {Using=xpath, value=/html/body/div[6]/div/section/div[3]/section[1]/div[3]/div[2]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[6]/div/section/div[3]/section[1]/div[3]/div[2]"}
+  (Session info: chrome=79.0.3945.88)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'DESKTOP-3EMGBI5', ip: '10.28.20.123', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 78.0.3904.105 (60e2d8774a81..., userDataDir: C:\Users\Jakov\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61685}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 2f3e0a902ae872782d30d417286e891b
+*** Element info: {Using=xpath, value=/html/body/div[6]/div/section/div[3]/section[1]/div[3]/div[2]}
+	at Tests.ChartQuantityTest.ChartQuantityTest_EndShopping2(ChartQuantityTest.java:87)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}) on port 15030
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1578400709.903][WARNING]: This version of ChromeDriver has not been tested with Chrome version 79.
+Jan 07, 2020 1:38:30 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="ChartQuantityTest_EndShopping_InsertedNumberOfProducts" classname="Tests.ChartQuantityTest" time="3.347">
     <failure message="expected [10] but found [1]" type="java.lang.AssertionError">java.lang.AssertionError: expected [10] but found [1]
 	at Tests.ChartQuantityTest.ChartQuantityTest_EndShopping_InsertedNumberOfProducts(ChartQuantityTest.java:111)
 </failure>
-    <system-err><![CDATA[Starting ChromeDriver 78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}) on port 3067
+    <system-err><![CDATA[Starting ChromeDriver 78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}) on port 29187
 Only local connections are allowed.
 Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-[1578222682.015][WARNING]: This version of ChromeDriver has not been tested with Chrome version 79.
-Jan 05, 2020 12:11:23 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+[1578400717.998][WARNING]: This version of ChromeDriver has not been tested with Chrome version 79.
+Jan 07, 2020 1:38:39 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="LoginWithFalseUsername" classname="Tests.LoginTest" time="1.32"/>
-  <testcase name="LoginWithRegisteredUsername" classname="Tests.LoginTest" time="3.004"/>
-  <testcase name="LoginWithRegisteredUsername_FalsePassword" classname="Tests.LoginTest" time="1.283"/>
-  <testcase name="SqlInjectionTest" classname="Tests.LoginTest" time="1.217"/>
+  <testcase name="LoginWithFalseUsername" classname="Tests.LoginTest" time="1.205"/>
+  <testcase name="LoginWithRegisteredUsername" classname="Tests.LoginTest" time="3.003"/>
+  <testcase name="LoginWithRegisteredUsername_FalsePassword" classname="Tests.LoginTest" time="1.292"/>
+  <testcase name="SqlInjectionTest" classname="Tests.LoginTest" time="1.261"/>
 </testsuite>

@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 6 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">12 methods, 5 failed,   7 passed</span>
+                    <span class="method-stats">12 methods, 6 failed,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -122,6 +122,11 @@
                       <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AllTestsSuite" title="Tests.ChartQuantityTest" class="method navigator-link" hash-for-method="ChartQuantityTest_EndShopping2">ChartQuantityTest_EndShopping2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-AllTestsSuite" title="Tests.ChartQuantityTest" class="method navigator-link" hash-for-method="ChartQuantityTest_EndShopping_InsertedNumberOfProducts">ChartQuantityTest_EndShopping_InsertedNumberOfProducts</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -142,11 +147,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-AllTestsSuite" title="Tests.ChartQuantityTest" class="method navigator-link" hash-for-method="ChartQuantityTest_EndShopping">ChartQuantityTest_EndShopping</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-AllTestsSuite" title="Tests.ChartQuantityTest" class="method navigator-link" hash-for-method="ChartQuantityTest_EndShopping2">ChartQuantityTest_EndShopping2</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -233,6 +233,36 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="ChartQuantityTest_EndShopping2">
+                  </a> <!-- ChartQuantityTest_EndShopping2 -->
+                  <span class="method-name">ChartQuantityTest_EndShopping2</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div[6]/div/section/div[3]/section[1]/div[3]/div[2]&quot;}
+  (Session info: chrome=79.0.3945.88)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;DESKTOP-3EMGBI5&apos;, ip: &apos;10.28.20.123&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;13.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 78.0.3904.105 (60e2d8774a81..., userDataDir: C:\Users\Jakov\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61685}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 2f3e0a902ae872782d30d417286e891b
+*** Element info: {Using=xpath, value=/html/body/div[6]/div/section/div[3]/section[1]/div[3]/div[2]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
+	at Pages.SearchResult.BuyProduct(SearchResult.java:23)
+	at Tests.ChartQuantityTest.ChartQuantityTest_EndShopping2(ChartQuantityTest.java:87)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="ChartQuantityTest_EndShopping_InsertedNumberOfProducts">
                   </a> <!-- ChartQuantityTest_EndShopping_InsertedNumberOfProducts -->
                   <span class="method-name">ChartQuantityTest_EndShopping_InsertedNumberOfProducts</span>
@@ -300,13 +330,6 @@
                   <span class="method-name">ChartQuantityTest_EndShopping</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="ChartQuantityTest_EndShopping2">
-                  </a> <!-- ChartQuantityTest_EndShopping2 -->
-                  <span class="method-name">ChartQuantityTest_EndShopping2</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-AllTestsSuite-class-passed -->
         </div> <!-- panel AllTestsSuite -->
@@ -366,56 +389,56 @@ data.addRows(12);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'Add500001ProductQuantity')
 data.setCell(0, 2, 'Tests.ChartQuantityTest')
-data.setCell(0, 3, 10766);
+data.setCell(0, 3, 10340);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'AddSameProductTwoTimes')
 data.setCell(1, 2, 'Tests.ChartQuantityTest')
-data.setCell(1, 3, 7781);
+data.setCell(1, 3, 5577);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'ChartQuantityTest_ContinueShopping2')
+data.setCell(2, 1, 'ChartQuantityTest_EndShopping_InsertedNumberOfProducts')
 data.setCell(2, 2, 'Tests.ChartQuantityTest')
-data.setCell(2, 3, 6014);
+data.setCell(2, 3, 3351);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'ChartQuantityTest_EndShopping')
 data.setCell(3, 2, 'Tests.ChartQuantityTest')
-data.setCell(3, 3, 3943);
+data.setCell(3, 3, 3263);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'ChartQuantityTest_EndShopping_InsertedNumberOfProducts')
+data.setCell(4, 1, 'ChartQuantityTest_ContinueShopping2')
 data.setCell(4, 2, 'Tests.ChartQuantityTest')
-data.setCell(4, 3, 3403);
+data.setCell(4, 3, 3114);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'ChartQuantityTest_EndShopping2')
-data.setCell(5, 2, 'Tests.ChartQuantityTest')
-data.setCell(5, 3, 3298);
+data.setCell(5, 1, 'LoginWithRegisteredUsername')
+data.setCell(5, 2, 'Tests.LoginTest')
+data.setCell(5, 3, 3002);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'LoginWithRegisteredUsername')
-data.setCell(6, 2, 'Tests.LoginTest')
-data.setCell(6, 3, 3002);
+data.setCell(6, 1, 'ChartQuantityTest_ContinueShopping')
+data.setCell(6, 2, 'Tests.ChartQuantityTest')
+data.setCell(6, 3, 2643);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'ChartQuantityTest_ContinueShopping_InsertedNumberOfProducts')
 data.setCell(7, 2, 'Tests.ChartQuantityTest')
-data.setCell(7, 3, 2732);
+data.setCell(7, 3, 2186);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'ChartQuantityTest_ContinueShopping')
-data.setCell(8, 2, 'Tests.ChartQuantityTest')
-data.setCell(8, 3, 2658);
+data.setCell(8, 1, 'LoginWithRegisteredUsername_FalsePassword')
+data.setCell(8, 2, 'Tests.LoginTest')
+data.setCell(8, 3, 1292);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'LoginWithFalseUsername')
+data.setCell(9, 1, 'SqlInjectionTest')
 data.setCell(9, 2, 'Tests.LoginTest')
-data.setCell(9, 3, 1321);
+data.setCell(9, 3, 1261);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'LoginWithRegisteredUsername_FalsePassword')
-data.setCell(10, 2, 'Tests.LoginTest')
-data.setCell(10, 3, 1283);
+data.setCell(10, 1, 'ChartQuantityTest_EndShopping2')
+data.setCell(10, 2, 'Tests.ChartQuantityTest')
+data.setCell(10, 3, 1209);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'SqlInjectionTest')
+data.setCell(11, 1, 'LoginWithFalseUsername')
 data.setCell(11, 2, 'Tests.LoginTest')
-data.setCell(11, 3, 1217);
+data.setCell(11, 3, 1206);
 window.suiteTableData['AllTestsSuite']= { tableData: data, tableDiv: 'times-div-AllTestsSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 47 seconds</span>
+              <span class="suite-total-time">Total running time: 38 seconds</span>
               <div id="times-div-AllTestsSuite">
               </div> <!-- times-div-AllTestsSuite -->
             </div> <!-- times-div -->
@@ -450,154 +473,156 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">Add500001ProductQuantity</span>
-                <span class="method-start">6697 ms</span>
+                <span class="method-start">16225 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardownTest</span>
-                <span class="method-start">17467 ms</span>
+                <span class="method-start">26592 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setupTest</span>
-                <span class="method-start">18183 ms</span>
+                <span class="method-start">27365 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">AddSameProductTwoTimes</span>
-                <span class="method-start">24844 ms</span>
+                <span class="method-start">35148 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardownTest</span>
-                <span class="method-start">32626 ms</span>
+                <span class="method-start">40725 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setupTest</span>
-                <span class="method-start">33397 ms</span>
+                <span class="method-start">41578 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">ChartQuantityTest_ContinueShopping</span>
-                <span class="method-start">42672 ms</span>
+                <span class="method-start">47454 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardownTest</span>
-                <span class="method-start">45331 ms</span>
+                <span class="method-start">50098 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setupTest</span>
-                <span class="method-start">46380 ms</span>
+                <span class="method-start">50828 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">ChartQuantityTest_ContinueShopping2</span>
-                <span class="method-start">53305 ms</span>
+                <span class="method-start">59650 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardownTest</span>
-                <span class="method-start">59320 ms</span>
+                <span class="method-start">62764 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setupTest</span>
-                <span class="method-start">60035 ms</span>
+                <span class="method-start">63546 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">ChartQuantityTest_ContinueShopping_InsertedNumberOfProducts</span>
-                <span class="method-start">69464 ms</span>
+                <span class="method-start">71419 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardownTest</span>
-                <span class="method-start">72197 ms</span>
+                <span class="method-start">73605 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setupTest</span>
-                <span class="method-start">72908 ms</span>
+                <span class="method-start">74345 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">ChartQuantityTest_EndShopping</span>
-                <span class="method-start">82021 ms</span>
+                <span class="method-start">80064 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardownTest</span>
-                <span class="method-start">85965 ms</span>
+                <span class="method-start">83327 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setupTest</span>
-                <span class="method-start">86691 ms</span>
+                <span class="method-start">84050 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">ChartQuantityTest_EndShopping2</span>
-                <span class="method-start">93579 ms</span>
+                <span class="method-start">90254 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardownTest</span>
-                <span class="method-start">96877 ms</span>
+                <span class="method-start">91482 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setupTest</span>
-                <span class="method-start">97580 ms</span>
+                <span class="method-start">92204 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">ChartQuantityTest_EndShopping_InsertedNumberOfProducts</span>
-                <span class="method-start">106193 ms</span>
+                <span class="method-start">100572 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardownTest</span>
-                <span class="method-start">109597 ms</span>
+                <span class="method-start">103924 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Tests.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setupTest</span>
-                <span class="method-start">110313 ms</span>
+                <span class="method-start">104684 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">LoginWithFalseUsername</span>
-                <span class="method-start">115391 ms</span>
+                <span class="method-start">109560 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardownTest</span>
-                <span class="method-start">116712 ms</span>
+                <span class="method-start">110766 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setupTest</span>
-                <span class="method-start">117395 ms</span>
+                <span class="method-start">111471 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">LoginWithRegisteredUsername</span>
-                <span class="method-start">122640 ms</span>
+                <span class="method-start">117984 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardownTest</span>
-                <span class="method-start">125642 ms</span>
+                <span class="method-start">120986 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setupTest</span>
-                <span class="method-start">126369 ms</span>
+                <span class="method-start">121733 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">LoginWithRegisteredUsername_FalsePassword</span>
-                <span class="method-start">131941 ms</span>
+                <span class="method-start">129487 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardownTest</span>
-                <span class="method-start">133224 ms</span>
+                <span class="method-start">130779 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setupTest</span>
-                <span class="method-start">133910 ms</span>
+                <span class="method-start">131544 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">SqlInjectionTest</span>
-                <span class="method-start">139305 ms</span>
+                <span class="method-start">136496 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardownTest</span>
-                <span class="method-start">140522 ms</span>
+                <span class="method-start">137758 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

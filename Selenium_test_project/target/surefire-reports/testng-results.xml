@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="12" passed="7" failed="5" skipped="0">
+<testng-results ignored="0" total="12" passed="6" failed="6" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-01-05T11:09:43Z" name="AllTestsSuite" finished-at="2020-01-05T11:12:04Z" duration-ms="141230">
+  <suite started-at="2020-01-07T12:37:04Z" name="AllTestsSuite" finished-at="2020-01-07T12:39:23Z" duration-ms="138472">
     <groups>
     </groups>
-    <test started-at="2020-01-05T11:09:43Z" name="HGSHOP Test" finished-at="2020-01-05T11:12:04Z" duration-ms="141230">
+    <test started-at="2020-01-07T12:37:04Z" name="HGSHOP Test" finished-at="2020-01-07T12:39:23Z" duration-ms="138472">
       <class name="Tests.ChartQuantityTest">
-        <test-method is-config="true" signature="setupTest()[pri:0, instance:Tests.ChartQuantityTest@7219ec67]" started-at="2020-01-05T11:09:43Z" name="setupTest" finished-at="2020-01-05T11:09:50Z" duration-ms="6697" status="PASS">
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:Tests.ChartQuantityTest@7219ec67]" started-at="2020-01-07T12:37:04Z" name="setupTest" finished-at="2020-01-07T12:37:20Z" duration-ms="16224" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="Add500001ProductQuantity()[pri:0, instance:Tests.ChartQuantityTest@7219ec67]" started-at="2020-01-05T11:09:50Z" name="Add500001ProductQuantity" finished-at="2020-01-05T11:10:00Z" duration-ms="10766" status="FAIL">
+        <test-method signature="Add500001ProductQuantity()[pri:0, instance:Tests.ChartQuantityTest@7219ec67]" started-at="2020-01-07T12:37:20Z" name="Add500001ProductQuantity" finished-at="2020-01-07T12:37:31Z" duration-ms="10340" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [false] but found [true]]]>
@@ -59,15 +59,15 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Add500001ProductQuantity -->
-        <test-method is-config="true" signature="teardownTest()[pri:0, instance:Tests.ChartQuantityTest@7219ec67]" started-at="2020-01-05T11:10:00Z" name="teardownTest" finished-at="2020-01-05T11:10:01Z" duration-ms="715" status="PASS">
+        <test-method is-config="true" signature="teardownTest()[pri:0, instance:Tests.ChartQuantityTest@7219ec67]" started-at="2020-01-07T12:37:31Z" name="teardownTest" finished-at="2020-01-07T12:37:32Z" duration-ms="771" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownTest -->
-        <test-method is-config="true" signature="setupTest()[pri:0, instance:Tests.ChartQuantityTest@7219ec67]" started-at="2020-01-05T11:10:01Z" name="setupTest" finished-at="2020-01-05T11:10:08Z" duration-ms="6661" status="PASS">
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:Tests.ChartQuantityTest@7219ec67]" started-at="2020-01-07T12:37:32Z" name="setupTest" finished-at="2020-01-07T12:37:39Z" duration-ms="7783" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="AddSameProductTwoTimes()[pri:0, instance:Tests.ChartQuantityTest@7219ec67]" started-at="2020-01-05T11:10:08Z" name="AddSameProductTwoTimes" finished-at="2020-01-05T11:10:15Z" duration-ms="7781" status="FAIL">
+        <test-method signature="AddSameProductTwoTimes()[pri:0, instance:Tests.ChartQuantityTest@7219ec67]" started-at="2020-01-07T12:37:39Z" name="AddSameProductTwoTimes" finished-at="2020-01-07T12:37:45Z" duration-ms="5577" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [2] but found [1]]]>
@@ -115,27 +115,27 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddSameProductTwoTimes -->
-        <test-method is-config="true" signature="teardownTest()[pri:0, instance:Tests.ChartQuantityTest@7219ec67]" started-at="2020-01-05T11:10:15Z" name="teardownTest" finished-at="2020-01-05T11:10:16Z" duration-ms="771" status="PASS">
+        <test-method is-config="true" signature="teardownTest()[pri:0, instance:Tests.ChartQuantityTest@7219ec67]" started-at="2020-01-07T12:37:45Z" name="teardownTest" finished-at="2020-01-07T12:37:46Z" duration-ms="853" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownTest -->
-        <test-method is-config="true" signature="setupTest()[pri:0, instance:Tests.ChartQuantityTest@7219ec67]" started-at="2020-01-05T11:10:16Z" name="setupTest" finished-at="2020-01-05T11:10:26Z" duration-ms="9275" status="PASS">
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:Tests.ChartQuantityTest@7219ec67]" started-at="2020-01-07T12:37:46Z" name="setupTest" finished-at="2020-01-07T12:37:52Z" duration-ms="5876" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="ChartQuantityTest_ContinueShopping()[pri:0, instance:Tests.ChartQuantityTest@7219ec67]" started-at="2020-01-05T11:10:26Z" name="ChartQuantityTest_ContinueShopping" finished-at="2020-01-05T11:10:28Z" duration-ms="2658" status="PASS">
+        <test-method signature="ChartQuantityTest_ContinueShopping()[pri:0, instance:Tests.ChartQuantityTest@7219ec67]" started-at="2020-01-07T12:37:52Z" name="ChartQuantityTest_ContinueShopping" finished-at="2020-01-07T12:37:54Z" duration-ms="2643" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ChartQuantityTest_ContinueShopping -->
-        <test-method is-config="true" signature="teardownTest()[pri:0, instance:Tests.ChartQuantityTest@7219ec67]" started-at="2020-01-05T11:10:28Z" name="teardownTest" finished-at="2020-01-05T11:10:29Z" duration-ms="1049" status="PASS">
+        <test-method is-config="true" signature="teardownTest()[pri:0, instance:Tests.ChartQuantityTest@7219ec67]" started-at="2020-01-07T12:37:54Z" name="teardownTest" finished-at="2020-01-07T12:37:55Z" duration-ms="730" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownTest -->
-        <test-method is-config="true" signature="setupTest()[pri:0, instance:Tests.ChartQuantityTest@7219ec67]" started-at="2020-01-05T11:10:29Z" name="setupTest" finished-at="2020-01-05T11:10:36Z" duration-ms="6925" status="PASS">
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:Tests.ChartQuantityTest@7219ec67]" started-at="2020-01-07T12:37:55Z" name="setupTest" finished-at="2020-01-07T12:38:04Z" duration-ms="8822" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="ChartQuantityTest_ContinueShopping2()[pri:0, instance:Tests.ChartQuantityTest@7219ec67]" started-at="2020-01-05T11:10:36Z" name="ChartQuantityTest_ContinueShopping2" finished-at="2020-01-05T11:10:42Z" duration-ms="6014" status="FAIL">
+        <test-method signature="ChartQuantityTest_ContinueShopping2()[pri:0, instance:Tests.ChartQuantityTest@7219ec67]" started-at="2020-01-07T12:38:04Z" name="ChartQuantityTest_ContinueShopping2" finished-at="2020-01-07T12:38:07Z" duration-ms="3114" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [2] but found [3]]]>
@@ -183,15 +183,15 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ChartQuantityTest_ContinueShopping2 -->
-        <test-method is-config="true" signature="teardownTest()[pri:0, instance:Tests.ChartQuantityTest@7219ec67]" started-at="2020-01-05T11:10:42Z" name="teardownTest" finished-at="2020-01-05T11:10:43Z" duration-ms="715" status="PASS">
+        <test-method is-config="true" signature="teardownTest()[pri:0, instance:Tests.ChartQuantityTest@7219ec67]" started-at="2020-01-07T12:38:07Z" name="teardownTest" finished-at="2020-01-07T12:38:08Z" duration-ms="782" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownTest -->
-        <test-method is-config="true" signature="setupTest()[pri:0, instance:Tests.ChartQuantityTest@7219ec67]" started-at="2020-01-05T11:10:43Z" name="setupTest" finished-at="2020-01-05T11:10:52Z" duration-ms="9428" status="PASS">
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:Tests.ChartQuantityTest@7219ec67]" started-at="2020-01-07T12:38:08Z" name="setupTest" finished-at="2020-01-07T12:38:16Z" duration-ms="7873" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="ChartQuantityTest_ContinueShopping_InsertedNumberOfProducts()[pri:0, instance:Tests.ChartQuantityTest@7219ec67]" started-at="2020-01-05T11:10:52Z" name="ChartQuantityTest_ContinueShopping_InsertedNumberOfProducts" finished-at="2020-01-05T11:10:55Z" duration-ms="2732" status="FAIL">
+        <test-method signature="ChartQuantityTest_ContinueShopping_InsertedNumberOfProducts()[pri:0, instance:Tests.ChartQuantityTest@7219ec67]" started-at="2020-01-07T12:38:16Z" name="ChartQuantityTest_ContinueShopping_InsertedNumberOfProducts" finished-at="2020-01-07T12:38:18Z" duration-ms="2186" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [10] but found [1]]]>
@@ -239,39 +239,109 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ChartQuantityTest_ContinueShopping_InsertedNumberOfProducts -->
-        <test-method is-config="true" signature="teardownTest()[pri:0, instance:Tests.ChartQuantityTest@7219ec67]" started-at="2020-01-05T11:10:55Z" name="teardownTest" finished-at="2020-01-05T11:10:56Z" duration-ms="711" status="PASS">
+        <test-method is-config="true" signature="teardownTest()[pri:0, instance:Tests.ChartQuantityTest@7219ec67]" started-at="2020-01-07T12:38:18Z" name="teardownTest" finished-at="2020-01-07T12:38:19Z" duration-ms="740" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownTest -->
-        <test-method is-config="true" signature="setupTest()[pri:0, instance:Tests.ChartQuantityTest@7219ec67]" started-at="2020-01-05T11:10:56Z" name="setupTest" finished-at="2020-01-05T11:11:05Z" duration-ms="9113" status="PASS">
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:Tests.ChartQuantityTest@7219ec67]" started-at="2020-01-07T12:38:19Z" name="setupTest" finished-at="2020-01-07T12:38:24Z" duration-ms="5719" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="ChartQuantityTest_EndShopping()[pri:0, instance:Tests.ChartQuantityTest@7219ec67]" started-at="2020-01-05T11:11:05Z" name="ChartQuantityTest_EndShopping" finished-at="2020-01-05T11:11:09Z" duration-ms="3943" status="PASS">
+        <test-method signature="ChartQuantityTest_EndShopping()[pri:0, instance:Tests.ChartQuantityTest@7219ec67]" started-at="2020-01-07T12:38:24Z" name="ChartQuantityTest_EndShopping" finished-at="2020-01-07T12:38:28Z" duration-ms="3263" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ChartQuantityTest_EndShopping -->
-        <test-method is-config="true" signature="teardownTest()[pri:0, instance:Tests.ChartQuantityTest@7219ec67]" started-at="2020-01-05T11:11:09Z" name="teardownTest" finished-at="2020-01-05T11:11:10Z" duration-ms="726" status="PASS">
+        <test-method is-config="true" signature="teardownTest()[pri:0, instance:Tests.ChartQuantityTest@7219ec67]" started-at="2020-01-07T12:38:28Z" name="teardownTest" finished-at="2020-01-07T12:38:28Z" duration-ms="723" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownTest -->
-        <test-method is-config="true" signature="setupTest()[pri:0, instance:Tests.ChartQuantityTest@7219ec67]" started-at="2020-01-05T11:11:10Z" name="setupTest" finished-at="2020-01-05T11:11:16Z" duration-ms="6888" status="PASS">
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:Tests.ChartQuantityTest@7219ec67]" started-at="2020-01-07T12:38:28Z" name="setupTest" finished-at="2020-01-07T12:38:34Z" duration-ms="6204" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="ChartQuantityTest_EndShopping2()[pri:0, instance:Tests.ChartQuantityTest@7219ec67]" started-at="2020-01-05T11:11:16Z" name="ChartQuantityTest_EndShopping2" finished-at="2020-01-05T11:11:20Z" duration-ms="3298" status="PASS">
+        <test-method signature="ChartQuantityTest_EndShopping2()[pri:0, instance:Tests.ChartQuantityTest@7219ec67]" started-at="2020-01-07T12:38:34Z" name="ChartQuantityTest_EndShopping2" finished-at="2020-01-07T12:38:36Z" duration-ms="1209" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[6]/div/section/div[3]/section[1]/div[3]/div[2]"}
+  (Session info: chrome=79.0.3945.88)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'DESKTOP-3EMGBI5', ip: '10.28.20.123', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 78.0.3904.105 (60e2d8774a81..., userDataDir: C:\Users\Jakov\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61685}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 2f3e0a902ae872782d30d417286e891b
+*** Element info: {Using=xpath, value=/html/body/div[6]/div/section/div[3]/section[1]/div[3]/div[2]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[6]/div/section/div[3]/section[1]/div[3]/div[2]"}
+  (Session info: chrome=79.0.3945.88)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'DESKTOP-3EMGBI5', ip: '10.28.20.123', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 78.0.3904.105 (60e2d8774a81..., userDataDir: C:\Users\Jakov\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61685}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 2f3e0a902ae872782d30d417286e891b
+*** Element info: {Using=xpath, value=/html/body/div[6]/div/section/div[3]/section[1]/div[3]/div[2]}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
+at Pages.SearchResult.BuyProduct(SearchResult.java:23)
+at Tests.ChartQuantityTest.ChartQuantityTest_EndShopping2(ChartQuantityTest.java:87)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:282)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:83)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:114)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:286)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:240)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ChartQuantityTest_EndShopping2 -->
-        <test-method is-config="true" signature="teardownTest()[pri:0, instance:Tests.ChartQuantityTest@7219ec67]" started-at="2020-01-05T11:11:20Z" name="teardownTest" finished-at="2020-01-05T11:11:20Z" duration-ms="702" status="PASS">
+        <test-method is-config="true" signature="teardownTest()[pri:0, instance:Tests.ChartQuantityTest@7219ec67]" started-at="2020-01-07T12:38:36Z" name="teardownTest" finished-at="2020-01-07T12:38:36Z" duration-ms="722" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownTest -->
-        <test-method is-config="true" signature="setupTest()[pri:0, instance:Tests.ChartQuantityTest@7219ec67]" started-at="2020-01-05T11:11:20Z" name="setupTest" finished-at="2020-01-05T11:11:29Z" duration-ms="8613" status="PASS">
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:Tests.ChartQuantityTest@7219ec67]" started-at="2020-01-07T12:38:36Z" name="setupTest" finished-at="2020-01-07T12:38:45Z" duration-ms="8368" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="ChartQuantityTest_EndShopping_InsertedNumberOfProducts()[pri:0, instance:Tests.ChartQuantityTest@7219ec67]" started-at="2020-01-05T11:11:29Z" name="ChartQuantityTest_EndShopping_InsertedNumberOfProducts" finished-at="2020-01-05T11:11:32Z" duration-ms="3403" status="FAIL">
+        <test-method signature="ChartQuantityTest_EndShopping_InsertedNumberOfProducts()[pri:0, instance:Tests.ChartQuantityTest@7219ec67]" started-at="2020-01-07T12:38:45Z" name="ChartQuantityTest_EndShopping_InsertedNumberOfProducts" finished-at="2020-01-07T12:38:48Z" duration-ms="3351" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [10] but found [1]]]>
@@ -319,57 +389,57 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ChartQuantityTest_EndShopping_InsertedNumberOfProducts -->
-        <test-method is-config="true" signature="teardownTest()[pri:0, instance:Tests.ChartQuantityTest@7219ec67]" started-at="2020-01-05T11:11:32Z" name="teardownTest" finished-at="2020-01-05T11:11:33Z" duration-ms="714" status="PASS">
+        <test-method is-config="true" signature="teardownTest()[pri:0, instance:Tests.ChartQuantityTest@7219ec67]" started-at="2020-01-07T12:38:48Z" name="teardownTest" finished-at="2020-01-07T12:38:49Z" duration-ms="758" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownTest -->
       </class> <!-- Tests.ChartQuantityTest -->
       <class name="Tests.LoginTest">
-        <test-method is-config="true" signature="setupTest()[pri:0, instance:Tests.LoginTest@45018215]" started-at="2020-01-05T11:11:33Z" name="setupTest" finished-at="2020-01-05T11:11:38Z" duration-ms="5078" status="PASS">
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:Tests.LoginTest@45018215]" started-at="2020-01-07T12:38:49Z" name="setupTest" finished-at="2020-01-07T12:38:54Z" duration-ms="4876" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="LoginWithFalseUsername()[pri:0, instance:Tests.LoginTest@45018215]" started-at="2020-01-05T11:11:38Z" name="LoginWithFalseUsername" finished-at="2020-01-05T11:11:40Z" duration-ms="1321" status="PASS">
+        <test-method signature="LoginWithFalseUsername()[pri:0, instance:Tests.LoginTest@45018215]" started-at="2020-01-07T12:38:54Z" name="LoginWithFalseUsername" finished-at="2020-01-07T12:38:55Z" duration-ms="1206" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginWithFalseUsername -->
-        <test-method is-config="true" signature="teardownTest()[pri:0, instance:Tests.LoginTest@45018215]" started-at="2020-01-05T11:11:40Z" name="teardownTest" finished-at="2020-01-05T11:11:40Z" duration-ms="683" status="PASS">
+        <test-method is-config="true" signature="teardownTest()[pri:0, instance:Tests.LoginTest@45018215]" started-at="2020-01-07T12:38:55Z" name="teardownTest" finished-at="2020-01-07T12:38:56Z" duration-ms="705" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownTest -->
-        <test-method is-config="true" signature="setupTest()[pri:0, instance:Tests.LoginTest@45018215]" started-at="2020-01-05T11:11:40Z" name="setupTest" finished-at="2020-01-05T11:11:45Z" duration-ms="5245" status="PASS">
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:Tests.LoginTest@45018215]" started-at="2020-01-07T12:38:56Z" name="setupTest" finished-at="2020-01-07T12:39:02Z" duration-ms="6513" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="LoginWithRegisteredUsername()[pri:0, instance:Tests.LoginTest@45018215]" started-at="2020-01-05T11:11:45Z" name="LoginWithRegisteredUsername" finished-at="2020-01-05T11:11:48Z" duration-ms="3002" status="PASS">
+        <test-method signature="LoginWithRegisteredUsername()[pri:0, instance:Tests.LoginTest@45018215]" started-at="2020-01-07T12:39:02Z" name="LoginWithRegisteredUsername" finished-at="2020-01-07T12:39:05Z" duration-ms="3002" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginWithRegisteredUsername -->
-        <test-method is-config="true" signature="teardownTest()[pri:0, instance:Tests.LoginTest@45018215]" started-at="2020-01-05T11:11:48Z" name="teardownTest" finished-at="2020-01-05T11:11:49Z" duration-ms="726" status="PASS">
+        <test-method is-config="true" signature="teardownTest()[pri:0, instance:Tests.LoginTest@45018215]" started-at="2020-01-07T12:39:05Z" name="teardownTest" finished-at="2020-01-07T12:39:06Z" duration-ms="747" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownTest -->
-        <test-method is-config="true" signature="setupTest()[pri:0, instance:Tests.LoginTest@45018215]" started-at="2020-01-05T11:11:49Z" name="setupTest" finished-at="2020-01-05T11:11:55Z" duration-ms="5572" status="PASS">
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:Tests.LoginTest@45018215]" started-at="2020-01-07T12:39:06Z" name="setupTest" finished-at="2020-01-07T12:39:14Z" duration-ms="7754" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="LoginWithRegisteredUsername_FalsePassword()[pri:0, instance:Tests.LoginTest@45018215]" started-at="2020-01-05T11:11:55Z" name="LoginWithRegisteredUsername_FalsePassword" finished-at="2020-01-05T11:11:56Z" duration-ms="1283" status="PASS">
+        <test-method signature="LoginWithRegisteredUsername_FalsePassword()[pri:0, instance:Tests.LoginTest@45018215]" started-at="2020-01-07T12:39:14Z" name="LoginWithRegisteredUsername_FalsePassword" finished-at="2020-01-07T12:39:15Z" duration-ms="1292" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginWithRegisteredUsername_FalsePassword -->
-        <test-method is-config="true" signature="teardownTest()[pri:0, instance:Tests.LoginTest@45018215]" started-at="2020-01-05T11:11:56Z" name="teardownTest" finished-at="2020-01-05T11:11:57Z" duration-ms="685" status="PASS">
+        <test-method is-config="true" signature="teardownTest()[pri:0, instance:Tests.LoginTest@45018215]" started-at="2020-01-07T12:39:15Z" name="teardownTest" finished-at="2020-01-07T12:39:16Z" duration-ms="765" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownTest -->
-        <test-method is-config="true" signature="setupTest()[pri:0, instance:Tests.LoginTest@45018215]" started-at="2020-01-05T11:11:57Z" name="setupTest" finished-at="2020-01-05T11:12:02Z" duration-ms="5395" status="PASS">
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:Tests.LoginTest@45018215]" started-at="2020-01-07T12:39:16Z" name="setupTest" finished-at="2020-01-07T12:39:21Z" duration-ms="4952" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="SqlInjectionTest()[pri:0, instance:Tests.LoginTest@45018215]" started-at="2020-01-05T11:12:02Z" name="SqlInjectionTest" finished-at="2020-01-05T11:12:03Z" duration-ms="1217" status="PASS">
+        <test-method signature="SqlInjectionTest()[pri:0, instance:Tests.LoginTest@45018215]" started-at="2020-01-07T12:39:21Z" name="SqlInjectionTest" finished-at="2020-01-07T12:39:22Z" duration-ms="1261" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SqlInjectionTest -->
-        <test-method is-config="true" signature="teardownTest()[pri:0, instance:Tests.LoginTest@45018215]" started-at="2020-01-05T11:12:03Z" name="teardownTest" finished-at="2020-01-05T11:12:04Z" duration-ms="683" status="PASS">
+        <test-method is-config="true" signature="teardownTest()[pri:0, instance:Tests.LoginTest@45018215]" started-at="2020-01-07T12:39:22Z" name="teardownTest" finished-at="2020-01-07T12:39:23Z" duration-ms="693" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownTest -->

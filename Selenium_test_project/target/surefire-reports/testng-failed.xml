@@ -5,6 +5,7 @@
     <classes>
       <class name="Tests.ChartQuantityTest">
         <methods>
+          <include name="ChartQuantityTest_EndShopping2"/>
           <include name="setupTest"/>
           <include name="AddSameProductTwoTimes"/>
           <include name="ChartQuantityTest_EndShopping_InsertedNumberOfProducts"/>
