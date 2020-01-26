@@ -1,10 +1,16 @@
 package Tests;
 
 import Pages.*;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.opera.OperaDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -21,11 +27,30 @@ public class LoginTest {
     String errorMessage = "Korisničko ime i lozinka ne odgovaraju";
 
     //-----------------------------------Test Setup-----------------------------------
+
+    @BeforeClass
+    public static void setupClass() {
+        WebDriverManager.chromedriver().setup();
+        WebDriverManager.firefoxdriver().setup();
+        WebDriverManager.operadriver().setup();
+        WebDriverManager.edgedriver().setup();
+        WebDriverManager.iedriver().setup();
+    }
     @BeforeMethod
     public void setupTest() {
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\Jakov\\Documents\\chromedriver.exe");
-        //Create a new ChromeDriver
-        driver = new ChromeDriver();
+        //Uncomment driver you want
+            //Internet explorer driver
+                //driver = new InternetExplorerDriver();
+            //Google Chrome driver
+                //driver = new ChromeDriver();
+            //Opera driver
+                //driver = new OperaDriver();
+            //Firefox driver
+                //driver = new FirefoxDriver();
+            //Edge driver
+                //driver = new EdgeDriver();
+
         //set POM
         loginPage = new LoginPage(driver);
         //navigate to web page
