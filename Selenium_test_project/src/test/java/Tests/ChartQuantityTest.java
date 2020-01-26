@@ -8,6 +8,9 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
+import java.util.concurrent.TimeUnit;
+
 public class ChartQuantityTest {
     //-----------------------------------Global Variables-----------------------------------
     //Declare a Webdriver variable
@@ -40,12 +43,12 @@ public class ChartQuantityTest {
     public void ChartQuantityTest_ContinueShopping() throws InterruptedException {
         homePage.SetSearchingProduct("Playstation");
         homePage.SubmitSearch();
-        Thread.sleep(700);
+        driver.manage().timeouts().implicitlyWait(700, TimeUnit.MILLISECONDS);
         searchResult.BuyProduct(1);
-        Thread.sleep(300);
+        driver.manage().timeouts().implicitlyWait(300, TimeUnit.MILLISECONDS);
         searchResult.ContinueShopping();
         //Test verify, we should have 1 product in chart.
-        Thread.sleep(200);
+        driver.manage().timeouts().implicitlyWait(200, TimeUnit.MILLISECONDS);
         Assert.assertEquals(chartPage.GetProductQuantity(),"1");
 
     }
@@ -54,14 +57,14 @@ public class ChartQuantityTest {
     public void ChartQuantityTest_ContinueShopping2() throws InterruptedException {
         homePage.SetSearchingProduct("Playstation");
         homePage.SubmitSearch();
-        Thread.sleep(700);
+        driver.manage().timeouts().implicitlyWait(700, TimeUnit.MILLISECONDS);
         searchResult.BuyProduct(1);
         //Add 2 "Playstation" to chart
         searchResult.IncreaseAmountBy1();
-        Thread.sleep(300);
+        driver.manage().timeouts().implicitlyWait(300, TimeUnit.MILLISECONDS);
         searchResult.ContinueShopping();
         //Test verify, we should have 2 products in chart.
-        Thread.sleep(200);
+        driver.manage().timeouts().implicitlyWait(200, TimeUnit.MILLISECONDS);
         Assert.assertEquals(chartPage.GetProductQuantity(),"2");
 
     }
@@ -70,12 +73,12 @@ public class ChartQuantityTest {
     public void ChartQuantityTest_EndShopping() throws InterruptedException {
         homePage.SetSearchingProduct("Playstation");
         homePage.SubmitSearch();
-        Thread.sleep(900);
+        driver.manage().timeouts().implicitlyWait(900, TimeUnit.MILLISECONDS);
         searchResult.BuyProduct(1);
-        Thread.sleep(300);
+        driver.manage().timeouts().implicitlyWait(300, TimeUnit.MILLISECONDS);
         searchResult.EndShopping();
         //Test verify, we should have 1 products in chart.
-        Thread.sleep(200);
+        driver.manage().timeouts().implicitlyWait(200, TimeUnit.MILLISECONDS);
         Assert.assertEquals(chartPage.GetProductQuantity(),"1");
     }
     //This test checks if chart is showing correct quantity number of products when we end shopping after adding two product to chart
@@ -83,14 +86,14 @@ public class ChartQuantityTest {
     public void ChartQuantityTest_EndShopping2() throws InterruptedException {
         homePage.SetSearchingProduct("Playstation");
         homePage.SubmitSearch();
-        Thread.sleep(300);
+        driver.manage().timeouts().implicitlyWait(300, TimeUnit.MILLISECONDS);
         searchResult.BuyProduct(1);
         //Add 2 "Playstation" to chart
         searchResult.IncreaseAmountBy1();
-        Thread.sleep(100);
+        driver.manage().timeouts().implicitlyWait(200, TimeUnit.MILLISECONDS);
         searchResult.EndShopping();
         //Test verify, we should have 1 products in chart.
-        Thread.sleep(200);
+        driver.manage().timeouts().implicitlyWait(100, TimeUnit.MILLISECONDS);
         Assert.assertEquals(chartPage.GetProductQuantity(),"2");
 
     }
@@ -100,14 +103,14 @@ public class ChartQuantityTest {
     public void ChartQuantityTest_EndShopping_InsertedNumberOfProducts() throws InterruptedException {
         homePage.SetSearchingProduct("Playstation");
         homePage.SubmitSearch();
-        Thread.sleep(700);
+        driver.manage().timeouts().implicitlyWait(700, TimeUnit.MILLISECONDS);
         searchResult.BuyProduct(1);
         //Add 2 "Playstation" to chart
         searchResult.SetAmount("10");
-        Thread.sleep(100);
+        driver.manage().timeouts().implicitlyWait(100, TimeUnit.MILLISECONDS);
         searchResult.EndShopping();
         //Test verify, we should have 1 products in chart.
-        Thread.sleep(200);
+        driver.manage().timeouts().implicitlyWait(100, TimeUnit.MILLISECONDS);
         Assert.assertEquals(chartPage.GetProductQuantity(),"10");
 
     }
@@ -115,14 +118,14 @@ public class ChartQuantityTest {
     public void ChartQuantityTest_ContinueShopping_InsertedNumberOfProducts() throws InterruptedException {
         homePage.SetSearchingProduct("Playstation");
         homePage.SubmitSearch();
-        Thread.sleep(300);
+        driver.manage().timeouts().implicitlyWait(700, TimeUnit.MILLISECONDS);
         searchResult.BuyProduct(1);
         //Add 2 "Playstation" to chart
         searchResult.SetAmount("10");
-        Thread.sleep(100);
+        driver.manage().timeouts().implicitlyWait(100, TimeUnit.MILLISECONDS);
         searchResult.ContinueShopping();
         //Test verify, we should have 1 products in chart.
-        Thread.sleep(200);
+        driver.manage().timeouts().implicitlyWait(100, TimeUnit.MILLISECONDS);
         Assert.assertEquals(chartPage.GetProductQuantity(),"10");
 
     }
@@ -134,7 +137,7 @@ public class ChartQuantityTest {
         homePage.CloseCookiePopup();
         homePage.SetSearchingProduct("Playstation");
         homePage.SubmitSearch();
-        Thread.sleep(900);
+        driver.manage().timeouts().implicitlyWait(700, TimeUnit.MILLISECONDS);
         searchResult.BuyProduct(1);
         //Add 50001 "Playstation" to chart
         searchResult.SetAmount("50000");
@@ -145,14 +148,10 @@ public class ChartQuantityTest {
         loginPage.SetUsername("jakovusdar@gmail.com");
         loginPage.SetPassword("testiranje123");
         loginPage.SubmitLogin();
-        Thread.sleep(100);
         chartPage.NextStep();
-        Thread.sleep(100);
         chartPage.SetPickupInStore();
         chartPage.ChoosePaymentOption_Cards();
-        Thread.sleep(100);
         chartPage.NextStep();
-        Thread.sleep(100);
         Assert.assertEquals(true,chartPage.IsOrderReady());
     }
     //If add product to chart after that same product was already added, quantity in chart should increase
@@ -160,17 +159,16 @@ public class ChartQuantityTest {
     public void AddSameProductTwoTimes()throws InterruptedException{
         homePage.SetSearchingProduct("Playstation");
         homePage.SubmitSearch();
-        Thread.sleep(700);
+        driver.manage().timeouts().implicitlyWait(700, TimeUnit.MILLISECONDS);
         searchResult.BuyProduct(1);
         searchResult.ContinueShopping();
         //Repeat process
         homePage.SetSearchingProduct("Playstation");
         homePage.SubmitSearch();
-        Thread.sleep(700);
+        driver.manage().timeouts().implicitlyWait(700, TimeUnit.MILLISECONDS);
         searchResult.BuyProduct(1);
         searchResult.ContinueShopping();
         chartPage.EnterChart();
-        Thread.sleep(100);
         //Quantity should be 2
         Assert.assertEquals(chartPage.GetQuantityOfFirstProductInChart(),"2");
 

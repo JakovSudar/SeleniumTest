@@ -9,6 +9,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.nio.charset.StandardCharsets;
+import java.util.concurrent.TimeUnit;
 
 public class LoginTest {
     //-----------------------------------Global Variables-----------------------------------
@@ -45,7 +46,7 @@ public class LoginTest {
         loginPage.SetPassword("abc1234lsadr@@");
         loginPage.SubmitLogin();
         //Error message should appear
-        Thread.sleep(300);
+        driver.manage().timeouts().implicitlyWait(300, TimeUnit.MILLISECONDS);
         Assert.assertEquals(loginPage.GetErrorMessage().isEmpty(),false);
     }
     @Test
@@ -54,7 +55,7 @@ public class LoginTest {
         loginPage.SetPassword("abc1234lsadr@@");
         loginPage.SubmitLogin();
         //Error message should appear
-        Thread.sleep(300);
+        driver.manage().timeouts().implicitlyWait(300, TimeUnit.MILLISECONDS);
         Assert.assertEquals(loginPage.GetErrorMessage().isEmpty(),false);
     }
    @Test
@@ -63,7 +64,7 @@ public class LoginTest {
        loginPage.SetPassword("'or'1=1");
        loginPage.SubmitLogin();
        //Error message should appear
-       Thread.sleep(300);
+       driver.manage().timeouts().implicitlyWait(300, TimeUnit.MILLISECONDS);
        Assert.assertEquals(loginPage.GetErrorMessage().isEmpty(),false);
    }
     @AfterMethod
