@@ -38,7 +38,6 @@ public class LoginTest {
     }
     @BeforeMethod
     public void setupTest() {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Jakov\\Documents\\chromedriver.exe");
         //Uncomment driver you want
             //Internet explorer driver
                 //driver = new InternetExplorerDriver();
