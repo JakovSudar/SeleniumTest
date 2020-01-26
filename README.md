@@ -11,9 +11,8 @@ Full report is available at [Report](https://github.com/JakovSudar/SeleniumTest/
 ---
 ### How to use?
 
-You must have installed maven and webdriver you want to use.
-Copy path to your webdriver and paste it in *@BeforeMethod* of test you want to run like in picture below: </br>
-![](/Selenium_test_project/Images/direkcija.png)</br>
+This project uses webdriver manager, to choose between web browsers just uncomment one in @BeforeClass like in picture below </br>
+![](/Selenium_test_project/Images/Screenshot_1.png)</br>
 Run test with *"mvn test"* command from terminal.
 
 ---
