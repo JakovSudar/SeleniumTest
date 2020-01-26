@@ -11,7 +11,7 @@ Full report is available at [Report](https://github.com/JakovSudar/SeleniumTest/
 ---
 ### How to use?
 
-This project uses webdriver manager, to choose between web browsers just uncomment one in @BeforeClass like in picture below </br>
+This project uses webdriver manager, to choose between web browsers just uncomment one in @BeforeMethod like in picture below </br>
 ![](/Selenium_test_project/Images/Screenshot_1.png)</br>
 Run test with *"mvn test"* command from terminal.
 
